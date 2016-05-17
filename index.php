@@ -19,6 +19,7 @@
               echo '<a href="logout.php">Logout</a>';
         }else {
              ?>
+              <h3>Javascript Login Script</h3>
                <script src="https://tools.contrib.com/connect?api_key=<?php echo $api_key?>"></script>
                <script type="text/javascript">
                var contrib_connect = {
@@ -31,7 +32,6 @@
                              
              <br> 
              <h3>OR Use Get Login Url</h3>
-             <br>
                          
              <?php
              $login_url =    $client->LoginUrl('http://localhost/contrib/index.php','http://localhost/');
